@@ -25,7 +25,7 @@ h1{
     text-align: justify;
 }
 
-img{
+#lpimage{
     height: 400px;
     width: 550px;
     border-radius: 15px;
@@ -34,17 +34,36 @@ img{
     margin-top: 60px;
 }
 
+#photo{
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+#logo{
+    height: 80px;
+    width: 378.94px;
+    border-radius: 0;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    padding-left: 20px;
+}
+
 .team{
     border: 3px solid #373435;
     background-color: #6DC7DE;
     border-radius: 15px;
     width: 500px;
-    height: 490px;
+    height: auto;
     position: relative;
     display: block;
     left: 500px;
     padding: 10px;
-    top: 700px;
+    top: 650px;
 }
 
 .centertext{
@@ -52,6 +71,10 @@ img{
 }
 table{
     margin: auto;
+}
+
+table td{
+    padding: 10px;
 }
 .line{
     position: relative;
@@ -68,10 +91,15 @@ table{
     clear: both;
     margin: 30px;
 }
-.links{
+#link{
     position: relative;
-    top: 690px;
+    top: -25px;
+    right: -900px;
     text-align: center;
-    margin: 20px;
-
+}
+#link2{
+    position: relative;
+    top: -25px;
+    right: -950px;
+    text-align: center;
 }
