@@ -22,8 +22,7 @@ const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 const auth = getAuth();
 
-signup.addEventListener('click', (e) => {
-
+function signupfunct(){
   var username = document.getElementById('username').value;
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
@@ -81,4 +80,13 @@ signup.addEventListener('click', (e) => {
       alert(errorMessage);
       // ..
     });
+}
+signup.addEventListener('click', (e) => {
+  signupfunct();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+      signupfunct();
+  }
 });
