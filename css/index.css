@@ -11,7 +11,7 @@ body{
 .top{
     background-image: linear-gradient(to bottom right,#A8518A , #EC268F);
     top:0;
-    border-bottom: 0.46vh solid #373435;
+    border-bottom: 0.23vw solid #373435;
 }
 
 h1{
@@ -19,7 +19,7 @@ h1{
 }
 
 #logo{
-    height: 12.32vh;
+    height: 6.24vw;
     width: 29.60vw;
     border-radius: 0;
     float: none;
@@ -49,22 +49,22 @@ h1{
     font-size: 1.25vw;
     position: absolute;
     margin-left: 5vw;
-    top: 38.50vh;
+    top: 19.53vw;
     text-align: justify;
 }
 
 #lpimage{
-    height: 61.60vh;
+    height: 31.25vw;
     width: 42.96vw;
     border-radius: 1.17vw;
     float: right;
     margin-right: 5vw;
-    margin-top: 9.24vh;
+    margin-top: 4.68vw;
 }
 
 #photo{
-    height: 7.7vh; /*50 px height and width*/
-    width: 3.9vw;
+    height: 5vw; /*50 px height and width*/
+    width: 5vw;
     border-radius: 0;
     float: none;
     margin-right: 0;
@@ -72,7 +72,7 @@ h1{
 }
 
 .team{
-    border: 0.46vh solid #373435;
+    border: 0.23vw solid #373435;
     background-color: #6DC7DE;
     border-radius: 1.17vw;
     width: 39.06vw;
@@ -81,7 +81,7 @@ h1{
     display: block;
     left: 30vw;
     padding: 0.78vw;
-    top: 100vh;
+    top: 50.72vw;
     font-size: 1.25vw;
 }
 
@@ -97,7 +97,7 @@ table td{
 }
 .line{
     position: relative;
-    top: 12.32vh;
+    top: 6.25vw;
     margin: auto;
     clear: both;
     margin: 2.34vw;
@@ -105,103 +105,12 @@ table td{
 
 .line2{
     position: relative;
-    top: 105vh;
+    top: 53.23vw;
     margin: auto;
     clear: both;
     margin: 2.34vw;
 }
 
-@media only screen and (max-width: 1280px) {
-    .top{
-        border-bottom: 0.46vh solid #25f9e7;
-    }
-    
-    #logo{
-        height: 12.32vh;
-        width: 29.60vw;
-        padding-left: 1.56vw;
-    }
-    
-    #link{
-        position: relative;
-        top: -1.95vw;
-        right: -50vw;
-        font-size: 1.25vw;
-        text-align: center;
-    }
-    #link2{
-        position: relative;
-        top: -1.95vw;
-        right: -55vw;
-        font-size: 1.25vw;
-        text-align: center;
-    }
-    
-    .desc{
-        width: 39.06vw;
-        height: 35.15vw;
-        font-size: 1.25vw;
-        position: absolute;
-        margin-left: 5vw;
-        top: 38.50vh;
-        text-align: justify;
-    }
-    
-    #lpimage{
-        height: 61.60vh;
-        width: 42.96vw;
-        border-radius: 1.17vw;
-        float: right;
-        margin-right: 5vw;
-        margin-top: 9.24vh;
-    }
-    
-    #photo{
-        height: 7.7vh; /*50 px height and width*/
-        width: 3.9vw;
-        border-radius: 0;
-        float: none;
-        margin-right: 0;
-        margin-top: 0;
-    }
-    
-    .team{
-        border: 0.46vh solid #373435;
-        background-color: #6DC7DE;
-        border-radius: 1.17vw;
-        width: 39.06vw;
-        height: auto;
-        position: relative;
-        display: block;
-        left: 30vw;
-        padding: 0.78vw;
-        top: 100vh;
-        font-size: 1.25vw;
-    }
-    
-    .centertext{
-        text-align: center;
-    }
-    table{
-        margin: auto;
-    }
-    
-    table td{
-        padding: 0.78vw;
-    }
-    .line{
-        position: relative;
-        top: 12.32vh;
-        margin: auto;
-        clear: both;
-        margin: 2.34vw;
-    }
-    
-    .line2{
-        position: relative;
-        top: 105vh;
-        margin: auto;
-        clear: both;
-        margin: 2.34vw;
-    }
+@media only screen and (max-width: 900px) {
+
 }
