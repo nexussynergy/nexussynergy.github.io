@@ -90,3 +90,7 @@ document.addEventListener('keydown', (event) => {
       signupfunct();
   }
 });
+
+logo.addEventListener('click', (e) => {
+    window.location.replace("index.html")
+});
