@@ -118,7 +118,7 @@ table td {
 
 @media only screen and (max-width: 700px) {
     .top {
-        border-bottom: 0.50vw solid #373435;
+        border-bottom: 0.30vw solid #373435;
     }
     
     h1 {
@@ -126,7 +126,7 @@ table td {
     }
     
     #logo {
-        height: 10.24vw;
+        height: 9vw;
         width: 40vw;
         border-radius: 0;
         float: none;
@@ -207,7 +207,6 @@ table td {
     }
     
     .line {
-        position: relative;
         top: 11vw;
         margin: auto;
         clear: both;
@@ -215,7 +214,6 @@ table td {
     }
     
     .line2 {
-        position: relative;
         top: 20vw;
         margin: auto;
         clear: both;
