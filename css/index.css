@@ -127,7 +127,7 @@ table td {
     
     #logo {
         height: 10.24vw;
-        width: 35.60vw;
+        width: 40vw;
         border-radius: 0;
         float: none;
         margin-right: 0;
@@ -138,23 +138,23 @@ table td {
     #link {
         position: relative;
         top: -4vw;
-        right: -40vw;
-        font-size: 2vw;
+        right: -38vw;
+        font-size: 1.75vw;
         text-align: center;
     }
     
     #link2 {
         position: relative;
         top: -4vw;
-        right: -45vw;
-        font-size: 2vw;
+        right: -43vw;
+        font-size: 1.75vw;
         text-align: center;
     }
     
     .desc {
         width: 40vw;
         height: 35.15vw;
-        font-size: 2vw;
+        font-size: 1.75vw;
         position: absolute;
         margin-left: 5vw;
         top: 19.53vw;
@@ -191,7 +191,7 @@ table td {
         left: 28vw;
         padding: 0.78vw;
         top: 62vw;
-        font-size: 2vw;
+        font-size: 1.75vw;
     }
     
     .centertext {
