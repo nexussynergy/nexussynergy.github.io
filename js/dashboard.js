@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
-import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,6 +30,11 @@ onAuthStateChanged(auth, (user) => {
     //read username from database
     const usernameRef = ref(db, 'users/' + uid + '/username');
     const levelRef = ref(db, 'users/' + uid + '/level');
+  
+    // Read the level data for the authenticated user
+    const logindate = ref(db, 'users/' + uid + '/last_login');
+    const dt = new Date();
+
     onValue(usernameRef, (snapshot) => {
       const data = snapshot.val();
       document.getElementById("usergreet").innerHTML = "Welcome " + data + "!";
