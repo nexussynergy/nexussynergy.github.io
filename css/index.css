@@ -84,7 +84,7 @@ h1 {
     display: block;
     left: 30vw;
     padding: 0.78vw;
-    top: 50.72vw;
+    top: 15vw;
     font-size: 1.25vw;
 }
 
@@ -110,7 +110,7 @@ table td {
 
 .line2 {
     position: relative;
-    top: 53.23vw;
+    top: 23vw;
     margin: auto;
     clear: both;
     margin: 2.34vw;
@@ -167,7 +167,7 @@ table td {
         border-radius: 1.17vw;
         float: right;
         margin-right: 4vw;
-        margin-top: 12vw;
+        margin-top: 8vw;
     }
     
     #photo {
@@ -190,7 +190,7 @@ table td {
         display: block;
         left: 28vw;
         padding: 0.78vw;
-        top: 62vw;
+        top: 15vw;
         font-size: 1.75vw;
     }
     
@@ -216,7 +216,7 @@ table td {
     
     .line2 {
         position: relative;
-        top: 60.23vw;
+        top: 20vw;
         margin: auto;
         clear: both;
         margin: 2.34vw;
