@@ -1,24 +1,25 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     background-image: linear-gradient(#6DC7DE, #A8518A);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-attachment: fixed;
 }
-*{
+
+* {
     color: #373435;
 }
 
-.top{
-    background-image: linear-gradient(to bottom right,#A8518A , #EC268F);
-    top:0;
+.top {
+    background-image: linear-gradient(to bottom right, #A8518A, #EC268F);
+    top: 0;
     border-bottom: 0.23vw solid #373435;
 }
 
-h1{
-    margin:0;
+h1 {
+    margin: 0;
 }
 
-#logo{
+#logo {
     height: 6.24vw;
     width: 29.60vw;
     border-radius: 0;
@@ -28,14 +29,15 @@ h1{
     padding-left: 1.56vw;
 }
 
-#link{
+#link {
     position: relative;
     top: -1.95vw;
     right: -50vw;
     font-size: 1.25vw;
     text-align: center;
 }
-#link2{
+
+#link2 {
     position: relative;
     top: -1.95vw;
     right: -55vw;
@@ -43,7 +45,7 @@ h1{
     text-align: center;
 }
 
-.desc{
+.desc {
     width: 39.06vw;
     height: 35.15vw;
     font-size: 1.25vw;
@@ -53,7 +55,7 @@ h1{
     text-align: justify;
 }
 
-#lpimage{
+#lpimage {
     height: 31.25vw;
     width: 42.96vw;
     border-radius: 1.17vw;
@@ -62,8 +64,9 @@ h1{
     margin-top: 4.68vw;
 }
 
-#photo{
-    height: 5vw; /*50 px height and width*/
+#photo {
+    height: 5vw;
+    /*50 px height and width*/
     width: 5vw;
     border-radius: 0;
     float: none;
@@ -71,7 +74,7 @@ h1{
     margin-top: 0;
 }
 
-.team{
+.team {
     border: 0.23vw solid #373435;
     background-color: #6DC7DE;
     border-radius: 1.17vw;
@@ -85,17 +88,19 @@ h1{
     font-size: 1.25vw;
 }
 
-.centertext{
+.centertext {
     text-align: center;
 }
-table{
+
+table {
     margin: auto;
 }
 
-table td{
+table td {
     padding: 0.78vw;
 }
-.line{
+
+.line {
     position: relative;
     top: 6.25vw;
     margin: auto;
@@ -103,7 +108,7 @@ table td{
     margin: 2.34vw;
 }
 
-.line2{
+.line2 {
     position: relative;
     top: 53.23vw;
     margin: auto;
@@ -111,6 +116,72 @@ table td{
     margin: 2.34vw;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
+    .top {
+        border-bottom: 0.18vh solid #373435;
+    }
 
-}
+    #logo {
+        height: 5vh;
+        width: 23.68vh;
+        padding-left: 1.25vh;
+    }
+
+    #link {
+        top: -1.56vh;
+        right: -40vh;
+        font-size: 1vh;
+    }
+
+    #link2 {
+        top: -1.56vh;
+        right: -44vh;
+        font-size: 1vh;
+    }
+
+    .desc {
+        width: 30.47vh;
+        height: 27.91vh;
+        font-size: 1vh;
+        margin-left: 3.13vh;
+        top: 12.21vh;
+    }
+
+    #lpimage {
+        height: 49.06vh;
+        width: 67.5vh;
+        border-radius: 1.17vh;
+        margin-right: 4vh;
+        margin-top: 2.93vh;
+
+    }
+
+    #photo {
+        height: 3.125vh;
+        width: 3.125vh;
+    }
+
+    .team {
+        border: 0.01825vh solid #373435;
+        border-radius: 1.17vh;
+        width: 39.06vh;
+        left: 25vh;
+        padding: 0.04875vh;
+        top: 31.7vh;
+        font-size: 0.078125vh;
+    }
+
+    table td {
+        padding: 0.61vh;
+    }
+    
+    .line {
+        top: 4.69vh;
+        margin: 1.82vh;
+    }
+    
+    .line2 {
+        top: 33.31vh;
+        margin: 1.82vh;
+    }
+}    
