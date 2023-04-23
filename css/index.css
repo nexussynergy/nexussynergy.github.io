@@ -118,70 +118,107 @@ table td {
 
 @media only screen and (max-width: 700px) {
     .top {
-        border-bottom: 0.18vh solid #373435;
+        border-bottom: 0.50vw solid #373435;
     }
-
+    
+    h1 {
+        margin: 0;
+    }
+    
     #logo {
-        height: 5vh;
-        width: 23.68vh;
-        padding-left: 1.25vh;
+        height: 10.24vw;
+        width: 35.60vw;
+        border-radius: 0;
+        float: none;
+        margin-right: 0;
+        margin-top: 0;
+        padding-left: 1.56vw;
     }
-
+    
     #link {
-        top: -1.56vh;
-        right: -40vh;
-        font-size: 1vh;
+        position: relative;
+        top: -4vw;
+        right: -40vw;
+        font-size: 2vw;
+        text-align: center;
     }
-
+    
     #link2 {
-        top: -1.56vh;
-        right: -44vh;
-        font-size: 1vh;
+        position: relative;
+        top: -4vw;
+        right: -45vw;
+        font-size: 2vw;
+        text-align: center;
     }
-
+    
     .desc {
-        width: 30.47vh;
-        height: 27.91vh;
-        font-size: 1vh;
-        margin-left: 3.13vh;
-        top: 12.21vh;
+        width: 40vw;
+        height: 35.15vw;
+        font-size: 2vw;
+        position: absolute;
+        margin-left: 5vw;
+        top: 19.53vw;
+        text-align: justify;
     }
-
+    
     #lpimage {
-        height: 49.06vh;
-        width: 67.5vh;
-        border-radius: 1.17vh;
-        margin-right: 4vh;
-        margin-top: 2.93vh;
-
+        height: 34.25vw;
+        width: 45.96vw;
+        border-radius: 1.17vw;
+        float: right;
+        margin-right: 4vw;
+        margin-top: 12vw;
     }
-
+    
     #photo {
-        height: 3.125vh;
-        width: 3.125vh;
+        height: 5vw;
+        /*50 px height and width*/
+        width: 5vw;
+        border-radius: 0;
+        float: none;
+        margin-right: 0;
+        margin-top: 0;
     }
-
+    
     .team {
-        border: 0.01825vh solid #373435;
-        border-radius: 1.17vh;
-        width: 39.06vh;
-        left: 25vh;
-        padding: 0.04875vh;
-        top: 31.7vh;
-        font-size: 0.078125vh;
+        border: 0.23vw solid #373435;
+        background-color: #6DC7DE;
+        border-radius: 1.17vw;
+        width: 45vw;
+        height: auto;
+        position: relative;
+        display: block;
+        left: 28vw;
+        padding: 0.78vw;
+        top: 62vw;
+        font-size: 2vw;
     }
-
+    
+    .centertext {
+        text-align: center;
+    }
+    
+    table {
+        margin: auto;
+    }
+    
     table td {
-        padding: 0.61vh;
+        padding: 0.78vw;
     }
     
     .line {
-        top: 4.69vh;
-        margin: 1.82vh;
+        position: relative;
+        top: 11vw;
+        margin: auto;
+        clear: both;
+        margin: 2.34vw;
     }
     
     .line2 {
-        top: 33.31vh;
-        margin: 1.82vh;
+        position: relative;
+        top: 60.23vw;
+        margin: auto;
+        clear: both;
+        margin: 2.34vw;
     }
-}    
+}
