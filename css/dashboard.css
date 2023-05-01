@@ -72,4 +72,9 @@ nav {
     #logo{
         height: 45px;
     }
+    nav ul{
+        position: relative;
+        right: 85px;
+        width: 120%;
+    }
   }
