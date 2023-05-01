@@ -140,3 +140,65 @@ nav {
         border-right: none;
     }
   }
+
+  @media screen and (max-width: 400px) {
+    .navbar {
+        height: 5%;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        position: relative;
+        top: 10vw;
+        width: 0%;
+        height: 50px;
+    }
+    #logo{
+        position: relative;
+        height: 45px;
+        left: 15.75vw;
+    }
+    nav ul{
+        position: relative;
+        top: 4vw;
+        width: 90vw;
+        left: -62vw;
+    }
+    #usergreet, #level, #log{
+        font-size: 3.25vw;
+    }
+    .navbar li a {
+        border-right: none;
+    }
+  }
+
+  @media screen and (max-width: 331px) {
+    .navbar {
+        height: 5%;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        position: relative;
+        top: 10vw;
+        width: 0%;
+        height: 50px;
+    }
+    #logo{
+        position: relative;
+        height: 45px;
+        left: 13.5vw;
+    }
+    nav ul{
+        position: relative;
+        top: 7vw;
+        width: 90vw;
+        left: -70.5vw;
+    }
+    #usergreet, #level, #log{
+        font-size: 3vw;
+    }
+    .navbar li a {
+        border-right: none;
+    }
+  }
