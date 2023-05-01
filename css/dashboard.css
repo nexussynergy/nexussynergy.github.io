@@ -78,3 +78,34 @@ nav {
         width: 120%;
     }
   }
+
+  @media screen and (max-width: 483px) {
+    .navbar {
+        height: 5%;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        position: relative;
+        top: 10vw;
+        width: 60%;
+        height: 50px;
+    }
+    #logo{
+        position: relative;
+        height: 45px;
+        left: 23vw;
+    }
+    nav ul{
+        position: relative;
+        top: 1vw;
+        width: 100vw;
+        left: -67vw;
+    }
+    #usergreet, #level, #log{
+        font-size: 3.25vw;
+    }
+    .navbar li a {
+        border-right: none;
+    }
+  }
