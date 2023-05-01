@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/dashboard.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +11,77 @@
 </head>
 
 <body>
-    <p id="usergreet">Loading..</p>
-    <p id="level"></p>
-    <h3 id="l1">Lesson 1 - C Syntax</h3>
-    <h3 id="l2">Lesson 2 - Print Text Output</h3>
-    <h3 id="l3">Lesson 3 - Comments</h3>
-    <h3 id="l4">Lesson 4 - Variables</h3> <!--const, booleans, strings-->
-    <h3 id="l5">Lesson 5 - Operators</h3>
-    <h3 id="l6">Lesson 6 - Conditional Statements</h3> <!--if else, switch-->
-    <h3 id="l7">Lesson 7 - Loops</h3> <!--while, for, break/continue-->
-    <h3 id="l8">Lesson 8 - Arrays</h3>
-    <h3 id="l9">Lesson 9 - User Input</h3>
-    <input id="logout" type="submit" value="Log Out">
+
+    <div class="container">
+        <div class="navbar">
+            <img src="img/RS-nav-logo.png" alt="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="@">HOME</a></li>
+                    <li><a href="@">SERIES</a></li>
+                    <li id="logout"><a>LOGOUT</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" alt="" class="menu">
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <h1>C Me Code!</h1>
+            <p id="usergreet">Loading..</p>
+            <p id="level"></p>
+            <button type="button">Explore</button>
+        </div>
+        
+        <div id="cards"class="col">
+
+            <div id="l1" class="card card1">
+                <h5 id="l1 h5">Lesson 1</h5>
+                <p>C Syntax</p>
+            </div>
+
+            <div id="l2" class="card card2">
+                <h5 id="l2 h5">Lesson 2</h5>
+                <p>Print Text Output</p>
+            </div>
+
+            <div id="l3" class="card card3">
+                <h5 id="l3 h5">Lesson 3</h5>
+                <p>Comments</p>
+            </div>
+
+            <div id="l4" class="card card4">
+                <h5 id="l4 h5">Lesson 4</h5>    <!--const, booleans, strings-->
+                <p>Variables</p>
+            </div>
+    
+            <div id="l5" class="card card5">
+                <h5 id="l5 h5">Lesson 5</h5>
+                <p>Operators</p>
+            </div>
+
+            <div id="l6" class="card card6">
+                <h5 id="l6 h5">Lesson 6</h5>    <!--if else, switch-->
+                <p>Conditional Statements</p>
+            </div>
+
+            <div id="l7" class="card card7">
+                <h5 id="l7 h5">Lesson 7</h5>    <!--while, for, break/continue-->
+                <p>Loops</p>
+            </div>
+
+            <div id="l8" class="card card8">
+                <h5 id="l8 h5">Lesson 8</h5>
+                <p>Arrays</p>
+            </div>
+
+            <div id="l9" class="card card9">
+                <h5 id="l9 h5">Lesson 9</h5>
+                <p>User Input</p>
+            </div>
+
+        </div>
+    </div>
 </body>
 <script type="module" src="js/main.js"></script>
 <script type="module" src="js/dashboard.js"></script>

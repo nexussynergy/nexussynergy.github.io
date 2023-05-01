@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
-import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -30,20 +30,15 @@ onAuthStateChanged(auth, (user) => {
     //read username from database
     const usernameRef = ref(db, 'users/' + uid + '/username');
     const levelRef = ref(db, 'users/' + uid + '/level');
-  
-    // Read the level data for the authenticated user
-    const logindate = ref(db, 'users/' + uid + '/last_login');
-    const dt = new Date();
-
     onValue(usernameRef, (snapshot) => {
       const data = snapshot.val();
-      document.getElementById("usergreet").innerHTML = "Welcome " + data + "!";
+      document.getElementById("usergreet").innerHTML = "Welcome <span>" + data + "</span>!";
     });
     onValue(levelRef, (snapshot) => {
       const data = snapshot.val();
       document.getElementById("level").innerHTML = "Level: " + data;
       if(data == 1){
-        document.getElementById("l1").style.color = "blue"
+        document.getElementById("l1 h5").style.color = "white"
         document.getElementById("l1").addEventListener("click", function() {
             window.location.replace("https://www.youtube.com/watch?v=9xya0oO5WgA&ab_channel=Shir%C5%8DSagisu-Topic");
         });
