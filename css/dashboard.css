@@ -1,23 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
-body{
-    margin:0;
-    background-image: linear-gradient(to bottom right,#A8518A , #6DC7DE);
-    background-attachment: fixed;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
-*{
+body {
     margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-span{
-    color: skyblue;
-}
-
-.container{
+.container {
     width: 100%;
     height: 100vh;
     padding-left: 8%;
@@ -25,160 +16,45 @@ span{
     box-sizing: border-box;
 }
 
-.logo{
-    width: 250px;
-    cursor: pointer;
-}
-
-.menu{
-    width: 40px;
-    cursor: pointer;
-    margin-left: 40px;
-}
-
-.navbar{
+.navbar {
     height: 12%;
     display: flex;
     align-items: center;
 }
 
-nav{
+#logo {
     position: relative;
-    right: -150px;
+    height: 70px;
+    left: -80px;
+    top: 5px;
+}
+
+span{
+    color: skyblue; 
+}
+
+#l1span, #l2span, #l3span, #l4span, #l5span, #l6span, #l7span, #l8span, #l9span, #l10span{
+    color: white;
+}
+
+nav {
+    position: relative;
+    right: -100px;
     flex: 1;
     text-align: right;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: inline-block;
-    padding: 30px;
+    padding: 15px;
     list-style: none;
 }
 
-.navbar li a{
+
+.navbar li a {
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     border-right: solid #fff 1px;
     padding-right: 10px;
 }
-
-.row{
-    display: flex;
-    padding: 20px;
-    height: 80%;
-    align-items: center;
-}
-
-.col{
-    color: #fff;
-    flex-basis: 50%;
-    font-size: 20px;
-}
-
-h1{
-    font-size: 75px;
-}
-
-p{
-    font-size: 15px;
-    line-height: 15px;
-}
-
-button{
-    border: 0;
-    padding: 10px;
-    font-size: 20px;
-    margin-top: 30px;
-    background: #fff;
-    color: #000;
-    width: 300px;
-    border-radius: 30px;
-    border: solid 2px #fff;
-    cursor: pointer;
-}
-
-button:hover{
-    background: transparent;
-    transition: ease-in-out 0.2s;
-    color: #fff;
-}
-
-.card h5{
-    color: red;
-    text-shadow: #000;
-    font-size: 18px;
-    position: relative;
-    top: 170px;
-    background-color: rgba(0,0,0,0.7);
-    padding: 15px 20px 0 20px;
-
-}
-
-.card p{
-    color: #fff;
-    font-size: 15px;
-    position: relative;
-    top: 170px;
-    background-color: rgba(0,0,0,0.7);
-    padding: 10px 20px;
-}
-
-#cards{
-    position: relative;
-    top: 240%;
-    
-}
-.card{
-    width: 250px;
-    height: 300px;
-    display: inline-block;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 15px 30px;
-    background-size: cover;
-    box-sizing: border-box;
-    background-position: center;
-    background-image: url(img/pic1.jpg);
-}   
-
-.card2{
-    background-image: url(img/pic2.jpg);
-}
-
-.card3{
-    background-image: url(img/pic3.jpg);
-}
-
-.card4{
-    background-image: url(img/pic4.jpg);
-}
-
-.card5{
-    background-image: url(img/pic4.jpg);
-}
-
-.card6{
-    background-image: url(img/pic4.jpg);
-}
-
-.card7{
-    background-image: url(img/pic4.jpg);
-}
-
-.card8{
-    background-image: url(img/pic4.jpg);
-}
-
-.card9{
-    background-image: url(img/pic4.jpg);
-}
-
-.card:hover{
-    transform: translateY(-10px);
-    transition:  0.5s;
-    box-shadow: 2px -1px 34px 4px rgba(255,255,255,0.49);
-    -webkit-box-shadow: 2px -1px 34px 4px rgba(255,255,255,0.49);
-    -moz-box-shadow: 2px -1px 34px 4px rgba(255,255,255,0.49);
-}
-

@@ -2,87 +2,177 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/dashboard.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="icon" href="https://media.discordapp.net/attachments/914462282585604126/1097892556538392766/Picsart_23-04-18_22-29-20-382.png?width=216&height=258">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="icon"
+        href="https://media.discordapp.net/attachments/914462282585604126/1097892556538392766/Picsart_23-04-18_22-29-20-382.png?width=216&height=258">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dbstyle.css">
 </head>
 
 <body>
 
     <div class="container">
         <div class="navbar">
-            <img src="img/RS-nav-logo.png" alt="" class="logo">
+            <img id="logo"
+                src="https://media.discordapp.net/attachments/1097859016182472724/1097859161078906900/logo.png?width=1440&height=321">
             <nav>
                 <ul>
-                    <li><a href="@">HOME</a></li>
-                    <li><a href="@">SERIES</a></li>
-                    <li id="logout"><a>LOGOUT</a></li>
+                    <li><a id="usergreet">Loading..</a></li>
+                    <li><a id="level">Level: </a></li>
+                    <li id="logout"><a>Log Out</a></li>
                 </ul>
             </nav>
-            <img src="img/menu.png" alt="" class="menu">
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            <h1>C Me Code!</h1>
-            <p id="usergreet">Loading..</p>
-            <p id="level"></p>
-            <button type="button">Explore</button>
         </div>
-        
-        <div id="cards"class="col">
-
-            <div id="l1" class="card card1">
-                <h5 id="l1 h5">Lesson 1</h5>
-                <p>C Syntax</p>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile1.jpg" alt="" id="l1 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 1</h2>
+                            <p class="description">C Syntax</p>
+                            <button id="l1 button" class="button"><span id="l1span">Unavailable</span></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile2.jpg" alt="" id="l2 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 2</h2>
+                            <p class="description">Print Text Output</p>
+                            <button id="l2 button" class="button"><span id="l2span">Unavailable</span></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile3.jpg" alt="" id="l3 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 3</h2>
+                            <p class="description">Comments</p>
+                            <button id="l3 button" class="button"><span id="l3span">Unavailable</span></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile4.jpg" alt="" id="l4 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 4</h2>
+                            <p class="description">Variables</p>
+                            <button id="l4 button" class="button"><span id="l4span">Unavailable</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile4.jpg" alt="" id="l5 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 5</h2>
+                            <p class="description">Operators</p>
+                            <button id="l5 button" class="button"><span id="l5span">Unavailable</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile6.jpg" alt="" id="l6 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 6</h2>
+                            <p class="description">Conditional Statements</p>
+                            <button id="l6 button" class="button"><span id="l6span">Unavailable</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile7.jpg" alt="" id="l7 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 7</h2>
+                            <p class="description">Loops</p>
+                            <button id="l7 button" class="button"><span id="l7span">Unavailable</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile8.jpg" alt="" id="l8 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 8</h2>
+                            <p class="description">Arrays</p>
+                            <button id="l8 button" class="button"><span id="l8span">Unavailable</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile9.jpg" alt="" id="l9 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Lesson 9</h2>
+                            <p class="description">User Input</p>
+                            <button id="l9 button" class="button"><span id="l9span">Unavailable</button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="images/profile9.jpg" alt="" id="l10 img" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Assessment</h2>
+                            <p class="description">C Quiz</p>
+                            <button id="l10 button" class="button"><span id="l10span">Unavailable</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div id="l2" class="card card2">
-                <h5 id="l2 h5">Lesson 2</h5>
-                <p>Print Text Output</p>
-            </div>
-
-            <div id="l3" class="card card3">
-                <h5 id="l3 h5">Lesson 3</h5>
-                <p>Comments</p>
-            </div>
-
-            <div id="l4" class="card card4">
-                <h5 id="l4 h5">Lesson 4</h5>    <!--const, booleans, strings-->
-                <p>Variables</p>
-            </div>
-    
-            <div id="l5" class="card card5">
-                <h5 id="l5 h5">Lesson 5</h5>
-                <p>Operators</p>
-            </div>
-
-            <div id="l6" class="card card6">
-                <h5 id="l6 h5">Lesson 6</h5>    <!--if else, switch-->
-                <p>Conditional Statements</p>
-            </div>
-
-            <div id="l7" class="card card7">
-                <h5 id="l7 h5">Lesson 7</h5>    <!--while, for, break/continue-->
-                <p>Loops</p>
-            </div>
-
-            <div id="l8" class="card card8">
-                <h5 id="l8 h5">Lesson 8</h5>
-                <p>Arrays</p>
-            </div>
-
-            <div id="l9" class="card card9">
-                <h5 id="l9 h5">Lesson 9</h5>
-                <p>User Input</p>
-            </div>
-
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
 </body>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<!-- JavaScript -->
+<script src="js/dbscript.js"></script>
 <script type="module" src="js/main.js"></script>
 <script type="module" src="js/dashboard.js"></script>
 </html>
