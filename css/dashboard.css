@@ -83,6 +83,9 @@ nav {
   }
 
   @media screen and (max-width: 483px) {
+    body {
+        background-image: linear-gradient(to bottom right, green, green);
+    }
     .navbar {
         height: 5%;
         display: flex;
