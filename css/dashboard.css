@@ -25,7 +25,7 @@ body {
 #logo {
     position: relative;
     height: 70px;
-    left: -80px;
+    left: -6.25vw;
     top: 5px;
 }
 
@@ -39,7 +39,7 @@ span{
 
 nav {
     position: relative;
-    right: -100px;
+    right: -5vw;
     flex: 1;
     text-align: right;
 }
@@ -58,3 +58,18 @@ nav {
     border-right: solid #fff 1px;
     padding-right: 10px;
 }
+
+@media screen and (max-width: 908px) {
+    .navbar {
+        height: 5%;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        width: 50%;
+        height: 50px;
+    }
+    #logo{
+        height: 45px;
+    }
+  }
