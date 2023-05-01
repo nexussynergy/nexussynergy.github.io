@@ -151,9 +151,6 @@ nav {
   }
 
   @media screen and (max-width: 400px) {
-    body {
-        background-image: linear-gradient(to bottom right, blue, blue);
-    }
 
     .navbar {
         height: 5%;
