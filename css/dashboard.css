@@ -88,7 +88,7 @@ nav {
     nav {
         position: relative;
         top: 10vw;
-        width: 50%;
+        width: 0%;
         height: 50px;
     }
     #logo{
@@ -98,9 +98,40 @@ nav {
     }
     nav ul{
         position: relative;
-        top: 1vw;
-        width: 95vw;
-        left: -62.5vw;
+        top: 4vw;
+        width: 90vw;
+        left: -57.5vw;
+    }
+    #usergreet, #level, #log{
+        font-size: 3.25vw;
+    }
+    .navbar li a {
+        border-right: none;
+    }
+  }
+
+  @media screen and (max-width: 451px) {
+    .navbar {
+        height: 5%;
+        display: flex;
+        align-items: center;
+    }
+    nav {
+        position: relative;
+        top: 10vw;
+        width: 0%;
+        height: 50px;
+    }
+    #logo{
+        position: relative;
+        height: 45px;
+        left: 19.75vw;
+    }
+    nav ul{
+        position: relative;
+        top: 4vw;
+        width: 90vw;
+        left: -58.5vw;
     }
     #usergreet, #level, #log{
         font-size: 3.25vw;
