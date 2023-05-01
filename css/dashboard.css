@@ -94,13 +94,13 @@ nav {
     #logo{
         position: relative;
         height: 45px;
-        left: 20.5vw;
+        left: 19vw;
     }
     nav ul{
         position: relative;
         top: 4vw;
         width: 90vw;
-        left: -57.5vw;
+        left: -59.5vw;
     }
     #usergreet, #level, #log{
         font-size: 3.25vw;
