@@ -60,9 +60,6 @@ nav {
 }
 
 @media screen and (max-width: 908px) {
-    body {
-        background-image: linear-gradient(to bottom right, yellow, yellow);
-    }
     .navbar {
         height: 5%;
         display: flex;
@@ -82,76 +79,7 @@ nav {
     }
   }
 
-  @media screen and (max-width: 483px) {
-    body {
-        background-image: linear-gradient(to bottom right, green, green);
-    }
-    .navbar {
-        height: 5%;
-        display: flex;
-        align-items: center;
-    }
-    nav {
-        position: relative;
-        top: 10vw;
-        width: 0%;
-        height: 50px;
-    }
-    #logo{
-        position: relative;
-        height: 45px;
-        left: 19vw;
-    }
-    nav ul{
-        position: relative;
-        top: 4vw;
-        width: 90vw;
-        left: -59.5vw;
-    }
-    #usergreet, #level, #log{
-        font-size: 3.25vw;
-    }
-    .navbar li a {
-        border-right: none;
-    }
-  }
-
-  @media screen and (max-width: 451px) {
-    body {
-        background-image: linear-gradient(to bottom right, red, red);
-    }
-    .navbar {
-        height: 5%;
-        display: flex;
-        align-items: center;
-    }
-    nav {
-        position: relative;
-        top: 10vw;
-        width: 0%;
-        height: 50px;
-    }
-    #logo{
-        position: relative;
-        height: 45px;
-        left: 19.75vw;
-    }
-    nav ul{
-        position: relative;
-        top: 4vw;
-        width: 90vw;
-        left: -58.5vw;
-    }
-    #usergreet, #level, #log{
-        font-size: 3.25vw;
-    }
-    .navbar li a {
-        border-right: none;
-    }
-  }
-
   @media screen and (max-width: 400px) {
-
     .navbar {
         height: 5%;
         display: flex;
@@ -166,50 +94,16 @@ nav {
     #logo{
         position: relative;
         height: 45px;
-        left: 15vw;
+        left: 14vw;
     }
     nav ul{
         position: relative;
         top: 4vw;
         width: 90vw;
-        left: -63.5vw;
+        left: -64.5vw;
     }
     #usergreet, #level, #log{
         font-size: 3.25vw;
-    }
-    .navbar li a {
-        border-right: none;
-    }
-  }
-
-  @media screen and (max-width: 331px) {
-    body {
-        background-image: linear-gradient(to bottom right, white, white);
-    }
-    .navbar {
-        height: 5%;
-        display: flex;
-        align-items: center;
-    }
-    nav {
-        position: relative;
-        top: 10vw;
-        width: 0%;
-        height: 50px;
-    }
-    #logo{
-        position: relative;
-        height: 45px;
-        left: 13.5vw;
-    }
-    nav ul{
-        position: relative;
-        top: 7vw;
-        width: 90vw;
-        left: -70.5vw;
-    }
-    #usergreet, #level, #log{
-        font-size: 3vw;
     }
     .navbar li a {
         border-right: none;
