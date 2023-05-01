@@ -31,7 +31,7 @@ function lesson1complete() {
   document.getElementById("l1span").innerHTML = "Completed"
 
   element.addEventListener('mouseover', function () {
-    element.style.background = "#87CBB9"
+    element.style.background = "#41F573"
     document.getElementById("l1span").style.color = "black"
   });
 
@@ -51,7 +51,7 @@ function lesson2complete() {
   document.getElementById("l2span").innerHTML = "Completed"
 
   element2.addEventListener('mouseover', function () {
-    element2.style.background = "#87CBB9"
+    element2.style.background = "#41F573"
     document.getElementById("l2span").style.color = "black"
   });
 
@@ -71,7 +71,7 @@ function lesson3complete() {
   document.getElementById("l3span").innerHTML = "Completed"
 
   element3.addEventListener('mouseover', function () {
-    element3.style.background = "#87CBB9"
+    element3.style.background = "#41F573"
     document.getElementById("l3span").style.color = "black"
   });
 
@@ -91,7 +91,7 @@ function lesson4complete() {
   document.getElementById("l4span").innerHTML = "Completed"
 
   element4.addEventListener('mouseover', function () {
-    element4.style.background = "#87CBB9"
+    element4.style.background = "#41F573"
     document.getElementById("l4span").style.color = "black"
   });
 
@@ -111,7 +111,7 @@ function lesson5complete() {
   document.getElementById("l5span").innerHTML = "Completed"
 
   element5.addEventListener('mouseover', function () {
-    element5.style.background = "#87CBB9"
+    element5.style.background = "#41F573"
     document.getElementById("l5span").style.color = "black"
   });
 
@@ -131,7 +131,7 @@ function lesson6complete() {
   document.getElementById("l6span").innerHTML = "Completed"
 
   element6.addEventListener('mouseover', function () {
-    element6.style.background = "#87CBB9"
+    element6.style.background = "#41F573"
     document.getElementById("l6span").style.color = "black"
   });
 
@@ -151,7 +151,7 @@ function lesson7complete() {
   document.getElementById("l7span").innerHTML = "Completed"
 
   element7.addEventListener('mouseover', function () {
-    element7.style.background = "#87CBB9"
+    element7.style.background = "#41F573"
     document.getElementById("l7span").style.color = "black"
   });
 
@@ -171,7 +171,7 @@ function lesson8complete() {
   document.getElementById("l8span").innerHTML = "Completed"
 
   element8.addEventListener('mouseover', function () {
-    element8.style.background = "#87CBB9"
+    element8.style.background = "#41F573"
     document.getElementById("l8span").style.color = "black"
   });
 
@@ -191,7 +191,7 @@ function lesson9complete() {
   document.getElementById("l9span").innerHTML = "Completed"
 
   element9.addEventListener('mouseover', function () {
-    element9.style.background = "#87CBB9"
+    element9.style.background = "#41F573"
     document.getElementById("l9span").style.color = "black"
   });
 
@@ -211,7 +211,7 @@ function lesson10complete() {
   document.getElementById("l10span").innerHTML = "Completed"
 
   element10.addEventListener('mouseover', function () {
-    element10.style.background = "#87CBB9"
+    element10.style.background = "#41F573"
     document.getElementById("l10span").style.color = "black"
   });
 
