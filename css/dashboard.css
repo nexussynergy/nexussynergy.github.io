@@ -111,6 +111,9 @@ nav {
   }
 
   @media screen and (max-width: 451px) {
+    body {
+        background-image: linear-gradient(to bottom right, red, red);
+    }
     .navbar {
         height: 5%;
         display: flex;
@@ -142,6 +145,10 @@ nav {
   }
 
   @media screen and (max-width: 400px) {
+    body {
+        background-image: linear-gradient(to bottom right, blue, blue);
+    }
+
     .navbar {
         height: 5%;
         display: flex;
@@ -173,6 +180,9 @@ nav {
   }
 
   @media screen and (max-width: 331px) {
+    body {
+        background-image: linear-gradient(to bottom right, white, white);
+    }
     .navbar {
         height: 5%;
         display: flex;
