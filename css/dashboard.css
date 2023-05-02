@@ -19,7 +19,7 @@ body {
     height: 12%;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: default;
 }
 
 #logo {
@@ -37,7 +37,12 @@ span {
     color: white;
 }
 
-#log:hover, #mobilelog:hover{
+#mobilelog:hover{
+    opacity: 0.75;
+    cursor: default;
+}
+
+#log:hover{
     opacity: 0.75;
     cursor: pointer;
 }

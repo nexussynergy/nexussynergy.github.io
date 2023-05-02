@@ -24,10 +24,21 @@ const auth = getAuth();
 const user = auth.currentUser;
 const db = getDatabase();
 
+const element = document.getElementById('l1 button');
+const element2 = document.getElementById('l2 button');
+const element3 = document.getElementById('l3 button');
+const element4 = document.getElementById('l4 button');
+const element5 = document.getElementById('l5 button');
+const element6 = document.getElementById('l6 button');
+const element7 = document.getElementById('l7 button');
+const element8 = document.getElementById('l8 button');
+const element9 = document.getElementById('l9 button');
+const element10 = document.getElementById('l10 button');
+
+
 function lesson1complete() {
   document.getElementById("l1 img").style.border = "4px solid green"
   document.getElementById("l1 button").style.backgroundColor = "green"
-  const element = document.getElementById('l1 button');
   document.getElementById("l1span").innerHTML = "Completed"
 
   element.addEventListener('mouseover', function () {
@@ -47,7 +58,6 @@ function lesson1complete() {
 function lesson2complete() {
   document.getElementById("l2 img").style.border = "4px solid green"
   document.getElementById("l2 button").style.backgroundColor = "green"
-  const element2 = document.getElementById('l2 button');
   document.getElementById("l2span").innerHTML = "Completed"
 
   element2.addEventListener('mouseover', function () {
@@ -67,7 +77,6 @@ function lesson2complete() {
 function lesson3complete() {
   document.getElementById("l3 img").style.border = "4px solid green"
   document.getElementById("l3 button").style.backgroundColor = "green"
-  const element3 = document.getElementById('l3 button');
   document.getElementById("l3span").innerHTML = "Completed"
 
   element3.addEventListener('mouseover', function () {
@@ -87,7 +96,6 @@ function lesson3complete() {
 function lesson4complete() {
   document.getElementById("l4 img").style.border = "4px solid green"
   document.getElementById("l4 button").style.backgroundColor = "green"
-  const element4 = document.getElementById('l4 button');
   document.getElementById("l4span").innerHTML = "Completed"
 
   element4.addEventListener('mouseover', function () {
@@ -107,7 +115,6 @@ function lesson4complete() {
 function lesson5complete() {
   document.getElementById("l5 img").style.border = "4px solid green"
   document.getElementById("l5 button").style.backgroundColor = "green"
-  const element5 = document.getElementById('l5 button');
   document.getElementById("l5span").innerHTML = "Completed"
 
   element5.addEventListener('mouseover', function () {
@@ -127,7 +134,6 @@ function lesson5complete() {
 function lesson6complete() {
   document.getElementById("l6 img").style.border = "4px solid green"
   document.getElementById("l6 button").style.backgroundColor = "green"
-  const element6 = document.getElementById('l6 button');
   document.getElementById("l6span").innerHTML = "Completed"
 
   element6.addEventListener('mouseover', function () {
@@ -147,7 +153,6 @@ function lesson6complete() {
 function lesson7complete() {
   document.getElementById("l7 img").style.border = "4px solid green"
   document.getElementById("l7 button").style.backgroundColor = "green"
-  const element7 = document.getElementById('l7 button');
   document.getElementById("l7span").innerHTML = "Completed"
 
   element7.addEventListener('mouseover', function () {
@@ -167,7 +172,6 @@ function lesson7complete() {
 function lesson8complete() {
   document.getElementById("l8 img").style.border = "4px solid green"
   document.getElementById("l8 button").style.backgroundColor = "green"
-  const element8 = document.getElementById('l8 button');
   document.getElementById("l8span").innerHTML = "Completed"
 
   element8.addEventListener('mouseover', function () {
@@ -187,7 +191,6 @@ function lesson8complete() {
 function lesson9complete() {
   document.getElementById("l9 img").style.border = "4px solid green"
   document.getElementById("l9 button").style.backgroundColor = "green"
-  const element9 = document.getElementById('l9 button');
   document.getElementById("l9span").innerHTML = "Completed"
 
   element9.addEventListener('mouseover', function () {
@@ -207,7 +210,6 @@ function lesson9complete() {
 function lesson10complete() {
   document.getElementById("l10 img").style.border = "4px solid green"
   document.getElementById("l10 button").style.backgroundColor = "green"
-  const element10 = document.getElementById('l10 button');
   document.getElementById("l10span").innerHTML = "Completed"
 
   element10.addEventListener('mouseover', function () {
@@ -225,6 +227,9 @@ function lesson10complete() {
   });
 }
 
+var elements = [element, element2, element3, element4, element5, element6, element7, element8, element9, element10]
+var lessoncompletes = [lesson1complete, lesson2complete, lesson3complete, lesson4complete, lesson5complete, lesson6complete, lesson7complete, lesson8complete, lesson9complete, lesson10complete]
+
 onAuthStateChanged(auth, (user) => {
   if (user) {
     const uid = user.uid;
@@ -238,6 +243,7 @@ onAuthStateChanged(auth, (user) => {
     });
     onValue(levelRef, (snapshot) => {
       const data = snapshot.val();
+
       if(data < 11){
         document.getElementById("level").innerHTML = "Level: " + data;
         document.getElementById("mobilelevel").innerHTML = "Level: " + data;
@@ -250,7 +256,6 @@ onAuthStateChanged(auth, (user) => {
       if (data == 1) {
         document.getElementById("l1 img").style.border = "4px solid skyblue"
         document.getElementById("l1 button").style.backgroundColor = "skyblue"
-        const element = document.getElementById('l1 button');
         document.getElementById("l1span").innerHTML = "In Progress"
 
         element.addEventListener('mouseover', function () {
@@ -266,6 +271,11 @@ onAuthStateChanged(auth, (user) => {
         element.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 2) {
         //l1
@@ -274,7 +284,6 @@ onAuthStateChanged(auth, (user) => {
         //l2
         document.getElementById("l2 img").style.border = "4px solid skyblue"
         document.getElementById("l2 button").style.backgroundColor = "skyblue"
-        const element2 = document.getElementById('l2 button');
         document.getElementById("l2span").innerHTML = "In Progress"
 
         element2.addEventListener('mouseover', function () {
@@ -290,18 +299,21 @@ onAuthStateChanged(auth, (user) => {
         element2.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 3) {
-        //l1
-        lesson1complete()
 
-        //l2
-        lesson2complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
 
         //l3
         document.getElementById("l3 img").style.border = "4px solid skyblue"
         document.getElementById("l3 button").style.backgroundColor = "skyblue"
-        const element3 = document.getElementById('l3 button');
         document.getElementById("l3span").innerHTML = "In Progress"
 
         element3.addEventListener('mouseover', function () {
@@ -317,14 +329,19 @@ onAuthStateChanged(auth, (user) => {
         element3.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 4) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l4 img").style.border = "4px solid skyblue"
         document.getElementById("l4 button").style.backgroundColor = "skyblue"
-        const element4 = document.getElementById('l4 button');
         document.getElementById("l4span").innerHTML = "In Progress"
 
         element4.addEventListener('mouseover', function () {
@@ -340,15 +357,19 @@ onAuthStateChanged(auth, (user) => {
         element4.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 5) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l5 img").style.border = "4px solid skyblue"
         document.getElementById("l5 button").style.backgroundColor = "skyblue"
-        const element5 = document.getElementById('l5 button');
         document.getElementById("l5span").innerHTML = "In Progress"
 
         element5.addEventListener('mouseover', function () {
@@ -364,16 +385,19 @@ onAuthStateChanged(auth, (user) => {
         element5.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 6) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
-        lesson5complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l6 img").style.border = "4px solid skyblue"
         document.getElementById("l6 button").style.backgroundColor = "skyblue"
-        const element6 = document.getElementById('l6 button');
         document.getElementById("l6span").innerHTML = "In Progress"
 
         element6.addEventListener('mouseover', function () {
@@ -389,17 +413,19 @@ onAuthStateChanged(auth, (user) => {
         element6.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 7) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
-        lesson5complete()
-        lesson6complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l7 img").style.border = "4px solid skyblue"
         document.getElementById("l7 button").style.backgroundColor = "skyblue"
-        const element7 = document.getElementById('l7 button');
         document.getElementById("l7span").innerHTML = "In Progress"
 
         element7.addEventListener('mouseover', function () {
@@ -415,18 +441,19 @@ onAuthStateChanged(auth, (user) => {
         element7.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 8) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
-        lesson5complete()
-        lesson6complete()
-        lesson7complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l8 img").style.border = "4px solid skyblue"
         document.getElementById("l8 button").style.backgroundColor = "skyblue"
-        const element8 = document.getElementById('l8 button');
         document.getElementById("l8span").innerHTML = "In Progress"
 
         element8.addEventListener('mouseover', function () {
@@ -442,19 +469,19 @@ onAuthStateChanged(auth, (user) => {
         element8.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 9) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
-        lesson5complete()
-        lesson6complete()
-        lesson7complete()
-        lesson8complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l9 img").style.border = "4px solid skyblue"
         document.getElementById("l9 button").style.backgroundColor = "skyblue"
-        const element9 = document.getElementById('l9 button');
         document.getElementById("l9span").innerHTML = "In Progress"
 
         element9.addEventListener('mouseover', function () {
@@ -470,20 +497,19 @@ onAuthStateChanged(auth, (user) => {
         element9.addEventListener("click", function () {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
+        for(let i = data ; i < elements.length ; i++){
+          elements[i].addEventListener("click", function (){
+            alert("Level is Insufficient to Proceed to this Lesson!");
+          });
+        }
       }
       else if (data == 10) {
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
-        lesson5complete()
-        lesson6complete()
-        lesson7complete()
-        lesson8complete()
-        lesson9complete()
+        for(let i = 0 ; i < data - 1; i++){
+          lessoncompletes[i]()
+        }
+
         document.getElementById("l10 img").style.border = "4px solid skyblue"
         document.getElementById("l10 button").style.backgroundColor = "skyblue"
-        const element10 = document.getElementById('l10 button');
         document.getElementById("l10span").innerHTML = "In Progress"
 
         element10.addEventListener('mouseover', function () {
@@ -501,16 +527,9 @@ onAuthStateChanged(auth, (user) => {
         });
       }
       else{
-        lesson1complete()
-        lesson2complete()
-        lesson3complete()
-        lesson4complete()
-        lesson5complete()
-        lesson6complete()
-        lesson7complete()
-        lesson8complete()
-        lesson9complete()
-        lesson10complete()
+        for(let i = 0 ; i < 10; i++){
+          lessoncompletes[i]()
+        }
       }
     });
   }
