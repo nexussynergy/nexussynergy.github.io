@@ -306,7 +306,6 @@ onAuthStateChanged(auth, (user) => {
         }
       }
       else if (data == 3) {
-
         for(let i = 0 ; i < data - 1; i++){
           lessoncompletes[i]()
         }
