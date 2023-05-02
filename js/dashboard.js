@@ -244,7 +244,7 @@ onAuthStateChanged(auth, (user) => {
       }
       else{
         document.getElementById("level").innerHTML = "Lessons Completed"
-        document.getElementById("mobileslevel").innerHTML = "Lessons Completed"
+        document.getElementById("mobilelevel").innerHTML = "Lessons Completed"
       }
       
       if (data == 1) {
@@ -500,7 +500,7 @@ onAuthStateChanged(auth, (user) => {
           window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
         });
       }
-      else {
+      else{
         lesson1complete()
         lesson2complete()
         lesson3complete()
