@@ -39,3 +39,7 @@ fieldset{
     height: 80px;
     width: auto;
 }
+
+#signup:hover{
+  border: 3px solid #EC268F;
+}

@@ -19,6 +19,7 @@ body {
     height: 12%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 #logo {
@@ -34,6 +35,11 @@ span {
 
 #l1span, #l2span, #l3span, #l4span, #l5span, #l6span, #l7span, #l8span, #l9span, #l10span {
     color: white;
+}
+
+#log:hover{
+    opacity: 0.75;
+    cursor: pointer;
 }
 
 nav {
