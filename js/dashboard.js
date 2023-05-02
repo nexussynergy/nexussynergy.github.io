@@ -533,4 +533,3 @@ mobilelog.addEventListener('click', (e) => {
 
 
 });
-
