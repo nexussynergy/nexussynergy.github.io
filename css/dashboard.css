@@ -1,111 +1,211 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
 
-
 body {
+
     margin: 0;
+
     background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
+
     background-attachment: fixed;
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .container {
+
     width: 100%;
+
     height: 100vh;
+
     padding-left: 8%;
+
     padding-right: 8%;
+
     box-sizing: border-box;
+
 }
 
 .navbar {
+
     height: 12%;
+
     display: flex;
+
     align-items: center;
+
 }
 
 #logo {
+
     position: relative;
+
     height: 70px;
+
     left: -6.25vw;
+
     top: 5px;
+
 }
 
 span{
+
     color: skyblue; 
+
 }
 
 #l1span, #l2span, #l3span, #l4span, #l5span, #l6span, #l7span, #l8span, #l9span, #l10span{
+
     color: white;
+
 }
 
 nav {
+
     position: relative;
+
     right: -5vw;
+
     flex: 1;
+
     text-align: right;
+
 }
 
 .navbar ul li {
+
     display: inline-block;
+
     padding: 15px;
+
     list-style: none;
+
 }
 
-
 .navbar li a {
+
     text-decoration: none;
+
     font-size: 20px;
+
     color: #ffffff;
+
     border-right: solid #fff 1px;
+
     padding-right: 10px;
+
 }
 
 @media screen and (max-width: 908px) {
+
     .navbar {
+
         height: 5%;
+
         display: flex;
+
         align-items: center;
+
     }
+
     nav {
+
         width: 50%;
+
         height: 50px;
+
     }
+
     #logo{
+
         height: 45px;
+
     }
+
     nav ul{
+
         position: relative;
+
         right: 85px;
+
         width: 120%;
+
     }
+
   }
 
   @media screen and (max-width: 400px) {
+
     .navbar {
+
+        margin-top: 2vw;
+
         height: 5%;
+
         display: flex;
+
         align-items: center;
+
     }
+
     nav {
+
         position: relative;
+
         top: 10vw;
+
         width: 0%;
+
         height: 50px;
+
     }
+
     #logo{
+
         position: relative;
+
         height: 45px;
+
         left: 14vw;
+
     }
+
     nav ul{
+
         position: relative;
+
         top: 4vw;
+
         width: 90vw;
-        left: -64.5vw;
+
+        left: -69.5vw;
+
     }
+
     #usergreet, #level, #log{
+
         font-size: 3.25vw;
+
     }
+
     .navbar li a {
+
         border-right: none;
+
+        padding: 10px;
+
     }
+
+    .navbar li{
+
+      width: 100vw;
+
+      padding: 10px;
+
+    }
+
   }
+   
+
+    
+
