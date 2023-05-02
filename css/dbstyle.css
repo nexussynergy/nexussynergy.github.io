@@ -157,12 +157,3 @@ body{
   }
 
 }
-
-@media screen and (max-width: 483px) {
-  .slide-container{
-    margin-top: 35vw;
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
-  }
-}

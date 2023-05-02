@@ -234,14 +234,17 @@ onAuthStateChanged(auth, (user) => {
     onValue(usernameRef, (snapshot) => {
       const data = snapshot.val();
       document.getElementById("usergreet").innerHTML = "Welcome <span>" + data + "</span>!";
+      document.getElementById("mobileusergreet").innerHTML = "Welcome <span>" + data + "</span>!";
     });
     onValue(levelRef, (snapshot) => {
       const data = snapshot.val();
       if(data < 11){
         document.getElementById("level").innerHTML = "Level: " + data;
+        document.getElementById("mobilelevel").innerHTML = "Level: " + data;
       }
       else{
         document.getElementById("level").innerHTML = "Lessons Completed"
+        document.getElementById("mobileslevel").innerHTML = "Lessons Completed"
       }
       
       if (data == 1) {
@@ -515,5 +518,19 @@ onAuthStateChanged(auth, (user) => {
 
 logo.addEventListener('click', (e) => {
   window.location.replace("index.html")
+});
+
+mobilelog.addEventListener('click', (e) => {
+
+  signOut(auth).then(() => {
+    alert("Sign Out Successfully!");
+    window.location.replace("login.html");
+    // Sign-out successful.
+  }).catch((error) => {
+    alert("Error, Please try again");
+    // An error happened.
+  });
+
+
 });
 

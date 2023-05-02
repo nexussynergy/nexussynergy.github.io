@@ -37,7 +37,7 @@ span {
     color: white;
 }
 
-#log:hover{
+#log:hover, #mobilelog:hover{
     opacity: 0.75;
     cursor: pointer;
 }
@@ -63,68 +63,44 @@ nav {
     padding-right: 10px;
 }
 
-@media screen and (max-width: 908px) {
-    .navbar {
-        height: 5%;
-        display: flex;
-        align-items: center;
-    }
-
-    nav {
-        width: 50%;
-        height: 50px;
-    }
-
-    #logo {
-        height: 45px;
-    }
-
-    nav ul {
-        position: relative;
-        right: 85px;
-        width: 120%;
-    }
+.mobilelog{
+    visibility: hidden;
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 795px) {
+
     .navbar {
-        margin-top: 2vw;
-        height: 5%;
-        display: flex;
-        align-items: center;
+        margin-bottom: 7vw;
     }
 
-    nav {
-        position: relative;
-        top: 10vw;
-        width: 0%;
-        height: 50px;
+    nav{
+        display: none;
     }
 
     #logo {
-        position: relative;
-        height: 45px;
-        left: 14vw;
+    position: static;
+    height: 11vw;
+    left: 0;
+    top: 0;
     }
 
-    nav ul {
-        position: relative;
-        top: 4vw;
-        width: 90vw;
-        left: -69.5vw;
+    .navbar{
+        justify-content: center;
     }
 
-    #usergreet, #level, #log {
-        font-size: 3.25vw;
+    .mobilelog{
+        visibility: visible;
     }
 
-    .navbar li a {
-        border-right: none;
-        padding: 10px;
+    .mobilelog table{
+        width: 100%;
+        table-layout: fixed;
     }
 
-    .navbar li {
-        width: 100vw;
-        padding: 10px;
+    .mobilelog table tr td{
+        font-size: 20px;
+        text-align: center;
+        color: white;
     }
 }
