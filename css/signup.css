@@ -1,9 +1,12 @@
-body{
-    margin:0;
-    background-image: linear-gradient(to bottom right,#A8518A , #6DC7DE);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
     background-attachment: fixed;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 fieldset{
     background-color: whitesmoke;
     height: 420px;

@@ -538,8 +538,7 @@ logo.addEventListener('click', (e) => {
   window.location.replace("index.html")
 });
 
-mobilelog.addEventListener('click', (e) => {
-
+function logout(){
   signOut(auth).then(() => {
     alert("Sign Out Successfully!");
     window.location.replace("login.html");
@@ -549,5 +548,11 @@ mobilelog.addEventListener('click', (e) => {
     // An error happened.
   });
 
+}
 
+log.addEventListener('click', (e) => {
+  logout();
+});
+mobilelog.addEventListener('click', (e) => {
+  logout();
 });

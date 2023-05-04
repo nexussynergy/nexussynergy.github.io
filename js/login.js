@@ -89,5 +89,5 @@ login.addEventListener('click', (e) => {
 });
 
 logo.addEventListener('click', (e) => {
-    window.location.replace("index.html")
+    window.location.href = "index.html"
 });
