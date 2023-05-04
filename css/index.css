@@ -126,16 +126,16 @@ body {
         height: 7vw;
     }
     .top table tr td a{
-        font-size: 1.1vw;
+        font-size: 1.7vw;
     }
     .description table tr td p{
-        font-size: 1.1vw;
+        font-size: 1.7vw;
     }
     .team{
         overflow: hidden;
     }
     .team table tr td{
-        font-size: 1.1vw;
+        font-size: 1.7vw;
     }
     .team table tr td img{
         object-fit: cover;
