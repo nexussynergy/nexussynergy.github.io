@@ -28,20 +28,9 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     const uid = user.uid;
     //read username from database
-    const usernameRef = ref(db, 'users/' + uid + '/username');
-    const levelRef = ref(db, 'users/' + uid + '/level');
-    onValue(usernameRef, (snapshot) => {
-      const data = snapshot.val();
-      document.getElementById("usergreet").innerHTML = "Welcome " + data + "!";
-    });
-    onValue(levelRef, (snapshot) => {
-      const data = snapshot.val();
-      document.getElementById("level").innerHTML = "Level: " + data;
-    });
-    
     // ...
   } else {
-    window.location.replace("login.html");
+    window.location.replace("index.html");
   }
 });
 

@@ -74,6 +74,8 @@ function loginfunct() {
             const errorMessage = error.message;
 
             alert("Wrong Username or Password, Please try again.");
+            document.getElementById("email").value = '';
+            document.getElementById("password").value = '';
         });
 }
 

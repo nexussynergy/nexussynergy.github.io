@@ -535,13 +535,13 @@ onAuthStateChanged(auth, (user) => {
 });
 
 logo.addEventListener('click', (e) => {
-  window.location.replace("index.html")
+  window.location.href = "index.html"
 });
 
 function logout(){
   signOut(auth).then(() => {
     alert("Sign Out Successfully!");
-    window.location.replace("login.html");
+    window.location.href = "index.html";
     // Sign-out successful.
   }).catch((error) => {
     alert("Error, Please try again");
