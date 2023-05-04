@@ -108,14 +108,12 @@ body {
 
 @media screen and (max-width: 1193px) {
     .description table {
-        border: 1px solid lime;
         border-collapse: collapse;
         width: 100%;
         table-layout: fixed;
       }
       
     .description td {
-        border: 1px solid red;
         text-align: center;
         margin: 0 auto;
         display: block;
