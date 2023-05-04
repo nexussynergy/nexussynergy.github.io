@@ -122,8 +122,31 @@ body {
     .description table tr td:nth-child(2){
         text-align: center;
     }
+    #logo{
+        height: 7vw;
+    }
+    .top table tr td a{
+        font-size: 1.1vw;
+    }
+    .description table tr td p{
+        font-size: 1.1vw;
+    }
     .team{
         overflow: hidden;
+    }
+    .team table tr td{
+        font-size: 1.1vw;
+    }
+    .team table tr td img{
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        height: 3.9vw;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .team table tr td img:hover {
+        height: 15.625vw;
+        width: 15.625vw;
     }
 }
 
