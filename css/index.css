@@ -1,222 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body {
     margin: 0;
-    background-image: linear-gradient(#6DC7DE, #A8518A);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
     background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
 }
 
-* {
-    color: #373435;
+.top table {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    table-layout: fixed;
 }
 
-.top {
-    background-image: linear-gradient(to bottom right, #A8518A, #EC268F);
-    top: 0;
-    border-bottom: 0.23vw solid #373435;
+.top table tr td a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-h1 {
-    margin: 0;
+.top table tr td a:hover {
+    opacity: 0.75;
 }
 
 #logo {
-    height: 6.24vw;
-    width: 29.60vw;
-    border-radius: 0;
-    float: none;
-    margin-right: 0;
-    margin-top: 0;
-    padding-left: 1.56vw;
+    height: 70px;
 }
 
-#link {
-    position: relative;
-    top: -1.95vw;
-    right: -50vw;
-    font-size: 1.25vw;
-    text-align: center;
+.description{
+    margin-top: 25px;
 }
 
-#link2 {
-    position: relative;
-    top: -1.95vw;
-    right: -55vw;
-    font-size: 1.25vw;
-    text-align: center;
+.description table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.desc {
-    width: 39.06vw;
-    height: 35.15vw;
-    font-size: 1.25vw;
-    position: absolute;
-    margin-left: 5vw;
-    top: 19.53vw;
+.description table tr td{
+    width: 50%;
+}
+
+.description table tr td:nth-child(2){
+    text-align: right;
+}
+
+.description p {
+    text-indent: 40px;
+    font-size: 14px;
     text-align: justify;
 }
 
 #lpimage {
-    height: 31.25vw;
-    width: 42.96vw;
-    border-radius: 1.17vw;
-    float: right;
-    margin-right: 5vw;
-    margin-top: 4.68vw;
+    height: 402.92px;
+    width: 533.9px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
 }
 
-#photo {
-    height: 5vw;
-    /*50 px height and width*/
-    width: 5vw;
-    border-radius: 0;
-    float: none;
-    margin-right: 0;
-    margin-top: 0;
+#lpimage:hover {
+    box-shadow: 0 0 10px #ffffffb2, 0 0 10px #ffffffb2, 0 0 10px #ffffffb2;
+}
+
+.line,
+.line2 {
+    border: 1px solid white;
+    width: 95%;
 }
 
 .team {
-    border: 0.23vw solid #373435;
-    background-color: #6DC7DE;
-    border-radius: 1.17vw;
-    width: 39.06vw;
-    height: auto;
-    position: relative;
-    display: block;
-    left: 30vw;
-    padding: 0.78vw;
-    top: 15vw;
-    font-size: 1.25vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #70d1e9;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.centertext {
+.team .centertext {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+}
+
+.team table {
+    width: 100%;
     text-align: center;
 }
 
-table {
-    margin: auto;
+.team table tr td img {
+    height: 50px;
+    transition: all 0.5s ease-in-out;
 }
 
-table td {
-    padding: 0.78vw;
-}
-
-.line {
-    position: relative;
-    top: 6.25vw;
-    margin: auto;
-    clear: both;
-    margin: 2.34vw;
-}
-
-.line2 {
-    position: relative;
-    top: 23vw;
-    margin: auto;
-    clear: both;
-    margin: 2.34vw;
-}
-
-@media only screen and (max-width: 700px) {
-    .top {
-        border-bottom: 0.30vw solid #373435;
-    }
-    
-    h1 {
-        margin: 0;
-    }
-    
-    #logo {
-        height: 9vw;
-        width: 40vw;
-        border-radius: 0;
-        float: none;
-        margin-right: 0;
-        margin-top: 0;
-        padding-left: 1.56vw;
-    }
-    
-    #link {
-        position: relative;
-        top: -4vw;
-        right: -38vw;
-        font-size: 1.75vw;
-        text-align: center;
-    }
-    
-    #link2 {
-        position: relative;
-        top: -4vw;
-        right: -43vw;
-        font-size: 1.75vw;
-        text-align: center;
-    }
-    
-    .desc {
-        width: 40vw;
-        height: 35.15vw;
-        font-size: 1.75vw;
-        position: absolute;
-        margin-left: 5vw;
-        top: 19.53vw;
-        text-align: justify;
-    }
-    
-    #lpimage {
-        height: 34.25vw;
-        width: 45.96vw;
-        border-radius: 1.17vw;
-        float: right;
-        margin-right: 4vw;
-        margin-top: 8.3vw;
-    }
-    
-    #photo {
-        height: 5vw;
-        /*50 px height and width*/
-        width: 5vw;
-        border-radius: 0;
-        float: none;
-        margin-right: 0;
-        margin-top: 0;
-    }
-    
-    .team {
-        border: 0.23vw solid #373435;
-        background-color: #6DC7DE;
-        border-radius: 1.17vw;
-        width: 45vw;
-        height: auto;
-        position: relative;
-        display: block;
-        left: 28vw;
-        padding: 0.78vw;
-        top: 15vw;
-        font-size: 1.75vw;
-    }
-    
-    .centertext {
-        text-align: center;
-    }
-    
-    table {
-        margin: auto;
-    }
-    
-    table td {
-        padding: 0.78vw;
-    }
-    
-    .line {
-        top: 11vw;
-        margin: auto;
-        clear: both;
-        margin: 2.34vw;
-    }
-    
-    .line2 {
-        top: 20vw;
-        margin: auto;
-        clear: both;
-        margin: 2.34vw;
-    }
+.team table tr td img:hover{
+    height: 100px
 }

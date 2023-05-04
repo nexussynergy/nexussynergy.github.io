@@ -2,7 +2,6 @@ body {
     margin: 0;
     background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
     background-attachment: fixed;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container {
@@ -60,7 +59,7 @@ nav {
 
 .navbar li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
     border-right: solid #fff 1px;
     padding-right: 10px;
