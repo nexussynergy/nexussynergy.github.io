@@ -29,7 +29,7 @@ body {
     height: 70px;
 }
 
-.description{
+.description {
     margin-top: 25px;
 }
 
@@ -39,11 +39,11 @@ body {
     margin-right: auto;
 }
 
-.description table tr td{
+.description table tr td {
     width: 50%;
 }
 
-.description table tr td:nth-child(2){
+.description table tr td:nth-child(2) {
     text-align: right;
 }
 
@@ -54,8 +54,8 @@ body {
 }
 
 #lpimage {
-    height: 402.92px;
-    width: 533.9px;
+    height: 31.47vw;
+    width: 41.71vw;
     border-radius: 20px;
     transition: all 0.5s ease-in-out;
 }
@@ -96,10 +96,46 @@ body {
 }
 
 .team table tr td img {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
     height: 50px;
     transition: all 0.5s ease-in-out;
 }
 
-.team table tr td img:hover{
-    height: 100px
+.team table tr td img:hover {
+    height: 200px;
+}
+
+@media screen and (max-width: 1193px) {
+    .description table {
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+      }
+      
+    .description td {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+      }  
+    .description table tr td:nth-child(2){
+        text-align: center;
+    }
+    .team{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .team{
+        font-size: 2.80vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #lpimage{
+        height: 401.6px;
+        width: 533.9px;
+    }
 }
