@@ -1,69 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 body {
-    margin: 0;
-    background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
-    background-attachment: fixed;
-    font-family: 'Poppins', sans-serif;
-}
-    
-.title{
-    padding-top: 50px;
-    text-align: center;
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #A8518A, #6DC7DE);
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
 }
 
-fieldset{
-    background-color: whitesmoke;
-    height: 390px;
-    width:300px; 
-    border: 3px solid #373435;
-    border-radius:15px; 
-    margin: auto;
-    position:relative;
-    top: 50px;
-    padding: 10px;}
+.title {
+  padding-top: 50px;
+  text-align: center;
+}
+
+fieldset {
+  background-color: whitesmoke;
+  height: 413.167px;
+  width: 287.958px;
+  border: 3px solid #373435;
+  border-radius: 15px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+  padding: 10px;
+}
 
 
-input{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    border-radius: 5px;
-    background-color: whitesmoke;
-  }
-  
-  input:focus {
-    border: 3px solid #EC268F;
-  }
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
 
-  h2{
-    text-align: center;
-  }
+input:focus {
+  border: 3px solid #EC268F;
+}
 
-  hr{
-    margin:20px;
-  }
-  img{
-    display: block;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 80px;
-    width: auto;
-  }
-  .other{
-    text-align: center;
-  }
-  a{
-    text-align: center;
-    color: #6DC7DE;
-    font-size: small;
-  }
-  *{
-    color:#373435;
-  }
+#login:hover{
+  border: 3px solid #EC268F;
+}
+
+h2 {
+  text-align: center;
+}
+
+hr {
+  margin: 20px;
+}
+
+img {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: auto;
+}
+
+.other {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+  color: #6DC7DE;
+  font-size: small;
+}
+
+a * {
+  color: #373435;
+}
